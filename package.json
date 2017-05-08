@@ -1,0 +1,41 @@
+{
+  "name": "ops",
+  "version": "0.0.1",
+  "description": "memory and cpu monitor",
+  "main": "index.js",
+  "bin": {
+    "ops": "./bin.js"
+  },
+  "scripts": {
+    "example": "node example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstandthird/ops.git"
+  },
+  "keywords": [
+    "hapi",
+    "ops",
+    "logging"
+  ],
+  "author": "Greg Allen <code@firstandthird.com> (http://firstandthird.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/ops/issues"
+  },
+  "homepage": "https://github.com/firstandthird/ops#readme",
+  "dependencies": {
+    "diskspace": "^2.0.0",
+    "logr": "^2.1.0",
+    "logr-flat": "^2.0.0",
+    "yargs": "^8.0.1"
+  },
+  "eslintConfig": {
+    "extends": "firstandthird"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-firstandthird": "^3.2.0",
+    "eslint-plugin-import": "^2.1.0"
+  }
+}
