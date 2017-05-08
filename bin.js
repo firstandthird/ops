@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 'use strict';
 const poll = require('./lib/poll.js');
 const os = require('os');
@@ -11,8 +12,8 @@ const argv = require('yargs')
 })
 .option('cpu', {
   alias: 'c',
-  describe: 'cpu threshold expressed as percent',
-  default: 50
+  describe: 'cpu/IO load avg expressed as fractional number',
+  default: 0.5
 })
 .option('memory', {
   alias: 'm',
