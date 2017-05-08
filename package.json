@@ -1,7 +1,7 @@
 {
   "name": "ops",
   "version": "0.0.1",
-  "description": "memory and cpu monitor",
+  "description": "memory, disk space, and cpu monitor",
   "main": "index.js",
   "bin": {
     "ops": "./bin.js"
