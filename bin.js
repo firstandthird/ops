@@ -18,12 +18,12 @@ const argv = require('yargs')
 .option('memory', {
   alias: 'm',
   describe: 'memory threshold expressed as percent',
-  default: 50
+  default: 75
 })
 .option('space', {
   alias: 's',
   describe: 'disk space threshold expressed as percent',
-  default: 50
+  default: 90
 })
 .option('disk', {
   alias: 'd',
