@@ -1,5 +1,5 @@
 {
-  "name": "ops",
+  "name": "@firstandthird/ops",
   "version": "0.0.1",
   "description": "memory, disk space, and cpu monitor",
   "main": "index.js",
@@ -7,6 +7,7 @@
     "ops": "./bin.js"
   },
   "scripts": {
+    "start": "node bin.js",
     "example": "node example/index.js"
   },
   "repository": {
