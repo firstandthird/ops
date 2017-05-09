@@ -30,6 +30,12 @@ const argv = require('yargs')
   describe: 'disk to monitor for space',
   default: os.platform() === 'win32' ? 'c' : '/'
 })
+.option('verbose', {
+  alias: 'v',
+  describe: 'verbose logging',
+  default: false
+})
+.env('OPS')
 .argv;
 
 poll(argv);
