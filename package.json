@@ -1,6 +1,6 @@
 {
   "name": "@firstandthird/ops",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "memory, disk space, and cpu monitor",
   "main": "index.js",
   "bin": {
