@@ -13,7 +13,7 @@ const argv = require('yargs')
 .option('cpu', {
   alias: 'c',
   describe: 'cpu/IO load avg expressed as fractional number',
-  default: 0.5
+  default: 0.75
 })
 .option('memory', {
   alias: 'm',
