@@ -13,13 +13,19 @@ const argv = require('yargs')
 .option('cpu', {
   alias: 'c',
   describe: 'cpu/IO load avg expressed as fractional number',
-  default: 0
+  default: 0.75
 })
-.option('minutes', {
-  alias: 'mi',
-  describe: '1/5/15 minute interval when calculating cpu load avg ',
-  default: 1,
-  choices: [1, 5, 15]
+.option('cpu_one_minute', {
+  describe: 'show warnings for cpu loads higher than the one-minute average',
+  default: true
+})
+.option('cpu_five_minute', {
+  describe: 'show warnings for cpu loads higher than the five-minute average',
+  default: false
+})
+.option('cpu_fifteen_minute', {
+  describe: 'show warnings for cpu loads higher than the fifteen-minute average',
+  default: false
 })
 .option('memory', {
   alias: 'm',
