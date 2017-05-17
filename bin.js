@@ -12,18 +12,18 @@ const argv = require('yargs')
 })
 .option('cpu', {
   alias: 'c',
-  describe: 'cpu/IO load avg expressed as fractional number',
+  describe: 'cpu/IO load avg expressed as fractional number (set to zero to skip monitoring)',
   default: 0.75
 })
-.option('cpu_one_minute', {
+.option('cpu-one-minute', {
   describe: 'show warnings for cpu loads higher than the one-minute average',
   default: true
 })
-.option('cpu_five_minute', {
+.option('cpu-five-minute', {
   describe: 'show warnings for cpu loads higher than the five-minute average',
   default: false
 })
-.option('cpu_fifteen_minute', {
+.option('cpu-fifteen-minute', {
   describe: 'show warnings for cpu loads higher than the fifteen-minute average',
   default: false
 })
