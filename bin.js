@@ -10,22 +10,17 @@ const argv = require('yargs')
   describe: 'polling interval expressed in seconds',
   default: 60
 })
-.option('cpu', {
-  alias: 'c',
-  describe: 'cpu/IO load avg expressed as fractional number (set to zero to skip monitoring)',
+.option('cpu-one-minute', {
+  describe: 'threshold to show warnings for cpu loads higher than the 1-minute average (set to 0 to turn off 1-minute warnings)',
   default: 0.75
 })
-.option('cpu-one-minute', {
-  describe: 'show warnings for cpu loads higher than the one-minute average',
-  default: true
-})
 .option('cpu-five-minute', {
-  describe: 'show warnings for cpu loads higher than the five-minute average',
-  default: false
+  describe: 'threshold to show warnings for cpu loads higher than the 5-minute average (set to 0 to turn off 5-minute warnings)',
+  default: 0
 })
 .option('cpu-fifteen-minute', {
-  describe: 'show warnings for cpu loads higher than the fifteen-minute average',
-  default: false
+  describe: 'threshold to show warnings for cpu loads higher than the 15e-minute average (set to 0 to turn off 15-minute warnings)',
+  default: 0
 })
 .option('memory', {
   alias: 'm',
