@@ -10,6 +10,11 @@ const argv = require('yargs')
   describe: 'polling interval expressed in seconds',
   default: 60
 })
+.option('inode', {
+  alias: 'in',
+  describe: 'inode useage threshold expressed as fractional number',
+  default: 0.75
+})
 .option('cpu-one-minute', {
   describe: 'threshold to show warnings for cpu loads higher than the 1-minute average (set to 0 to turn off 1-minute warnings)',
   default: 0.75
