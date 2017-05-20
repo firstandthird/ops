@@ -17,8 +17,8 @@ const argv = require('yargs')
 })
 .option('partition', {
   alias: 'p',
-  describe: 'the filesystem to count inodes for',
-  default: '/dev/sda1'
+  describe: 'the beginning of the filesystem to count inodes for (will select first matching partition)',
+  default: '/'
 })
 .option('cpu-one-minute', {
   describe: 'threshold to show warnings for cpu loads higher than the 1-minute average (set to 0 to turn off 1-minute warnings)',
