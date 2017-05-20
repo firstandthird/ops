@@ -17,7 +17,7 @@ const argv = require('yargs')
 })
 .option('partition', {
   alias: 'p',
-  describe: 'the beginning of the filesystem to count inodes for (will select first matching partition)',
+  describe: 'the mount point to count inodes for',
   default: '/'
 })
 .option('cpu-one-minute', {
