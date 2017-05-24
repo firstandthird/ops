@@ -9,7 +9,7 @@ tap.test('can parse new-style "free" output', (t) => {
 Mem:        2046568      433160       76788       23028     1536620     1530216
 Swap:             0           0           0        `);
   t.equal(typeof output, 'object');
-  t.equal(output.free, 3143624);
+  t.equal(output.free, 1613408);
   t.end();
 });
 
@@ -21,6 +21,6 @@ Mem:       4046848    2571404    1475444       3860     260292     804960
 -/+ buffers/cache:    1506152    2540696
 Swap:            0          0          0              `);
   t.equal(typeof output, 'object');
-  t.equal(output.free, 1735736);
+  t.equal(output.free, 2540696);
   t.end();
 });
