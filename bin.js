@@ -10,6 +10,11 @@ const argv = require('yargs')
   describe: 'polling interval expressed in seconds',
   default: 60
 })
+.option('reportRate', {
+  alias: 'r',
+  describe: 'only report threshold warnings at a rate of once per reportRate',
+  default: 5 * 60000 // 5 minute intervals by default
+})
 .option('inode', {
   alias: 'in',
   describe: 'inode useage threshold expressed as fractional number',
