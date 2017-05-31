@@ -27,7 +27,7 @@
   "homepage": "https://github.com/firstandthird/ops#readme",
   "dependencies": {
     "diskspace": "^2.0.0",
-    "logr": "^2.1.0",
+    "logr": "^2.2.0",
     "logr-flat": "^2.0.0",
     "runshell": "^0.2.0",
     "yargs": "^8.0.1"
