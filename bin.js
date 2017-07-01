@@ -10,6 +10,15 @@ const argv = require('yargs')
   describe: 'polling interval expressed in seconds',
   default: 60
 })
+.option('slackReportRate', {
+  alias: 'r',
+  describe: 'only slack report threshold warnings at a rate of once per slackReportRate',
+  default: 0
+})
+.option('slackHook', {
+  alias: 'l',
+  describe: 'slack hook'
+})
 .option('inode', {
   alias: 'in',
   describe: 'inode useage threshold expressed as fractional number',
