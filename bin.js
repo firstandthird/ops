@@ -56,6 +56,11 @@ const argv = require('yargs')
   describe: 'disk to monitor for space',
   default: os.platform() === 'win32' ? 'c' : '/'
 })
+.option('name', {
+  alias: 'n',
+  describe: 'optional server name when posting messages',
+  default: undefined
+})
 .option('verbose', {
   alias: 'v',
   describe: 'verbose logging',
