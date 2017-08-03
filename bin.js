@@ -69,4 +69,4 @@ const argv = require('yargs')
 .env('OPS')
 .argv;
 
-poll(argv);
+poll.start(argv);
