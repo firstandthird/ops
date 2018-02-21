@@ -17,7 +17,12 @@ const argv = require('yargs')
 })
 .option('slackHook', {
   alias: 'l',
-  describe: 'slack hook'
+  describe: 'slack hook',
+})
+.option('emoji', {
+  alias: 'e',
+  describe: 'a slack emoji, be sure to enclose in colons (eg ":monkey_face:")',
+  default: ':computer:'
 })
 .option('inode', {
   alias: 'in',
