@@ -60,3 +60,21 @@ tap.test('logs when cpu stats are exceeded / restored', (t) => {
   t.equal(thresholds.cpu_fifteen_minute, false, 'tracks that fifteen minute cpu threshold restored');
   t.end();
 });
+
+tap.test('exports polling methods', (t) => {
+  const ops = require('../index.js');
+  t.equal(typeof ops.stats.parseMemory, 'function');
+  t.equal(typeof ops.stats.getMemory, 'function');
+  t.equal(typeof ops.stats.getCPU, 'function');
+  t.equal(typeof ops.stats.getDisk, 'function');
+  t.equal(typeof ops.stats.getInodes, 'function');
+  t.equal(typeof ops.poll.logCPU, 'function');
+  t.equal(typeof ops.poll.logMemory, 'function');
+  t.equal(typeof ops.poll.logDisk, 'function');
+  t.equal(typeof ops.poll.start, 'function');
+  t.equal(typeof ops.poll.onMemTimer, 'function');
+  t.equal(typeof ops.poll.onDiskTimer, 'function');
+  t.equal(typeof ops.poll.onCPUTimer, 'function');
+  t.equal(typeof ops.poll.onInodeTimer, 'function');
+  t.end();
+});
